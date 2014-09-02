@@ -50,7 +50,10 @@
 				return "fixed rate ";
 			}
 		}
-
+>
+***
+		//动态组合重组对象 相对于 继承要好很多
+		
 		$lesson[] = new seminar(7,new timedcoststrategy());
 		$lesson[] = new lecture(9,new fixedcoststrategy());
 		 
@@ -58,6 +61,7 @@
 			 print "lesson charge {$value->cost()} ";
 			 print "lcharge type: {$value->chargeType()} <br/>";
 		}
+
 
 		//lesson charge 35lcharge type: hourly rate 
 		//lesson charge 30lcharge type: fixed rate 
