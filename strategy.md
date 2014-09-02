@@ -9,7 +9,7 @@
 		
 			function __construct($duration, CostStrategy $strategy ){//类型检查 必须是CostStrategy 类
 				$this->duration = $duration;
-				$this->constStrategy = $strategy;
+				$this->constStrategy = $strategy;//将算法提取为 CostStrategy 类 ，放置在共同接口中
 			}
 			function cost(){
 				return $this->constStrategy->cost($this);
@@ -29,6 +29,7 @@
 		
 		}
 >
+		//将算法提取为 CostStrategy 类 ，放置在共同接口中每个算法只实现一次
 		abstract class CostStrategy {
 			abstract function cost( lesson $lesson );
 			abstract function chargeType();
