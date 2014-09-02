@@ -66,4 +66,44 @@
 
 		//lesson charge 35lcharge type: hourly rate 
 		//lesson charge 30lcharge type: fixed rate 
-		//
+***
+>
+	class RegistrationMgr{
+		function register(lesson $lesson){
+			$notifier = Notifier::getNotifier();
+			$notifier->inform("new lesson : cost ({$lesson->cost()})");
+		}
+	}
+
+>
+
+	abstract class Notifier{//抽象类
+		static function getNotifier(){//静态方法，static 指向当前调用本身
+			if(rand(1,2)==1){
+				return new MailNotifier();
+			}else{
+				return new TextNotifier();
+			}
+		}
+		//$notifier = Notifier::getNotifier(); 外部调用
+		
+		//$notifier->inform("new lesson : cost ({$lesson->cost()})"); 通过 RegistrationMgr 实现
+		abstract function inform($message);
+	}
+	
+	
+	
+	class MailNotifier extends Notifier{
+		function inform($message){
+			print "MAIL notifiaction :{$message}";
+		}
+	}
+	class TextNotifier extends Notifier{
+		function inform($message){
+			print "Text notifiaction :{$message}";
+		}
+	}
+	
+	$msg = new RegistrationMgr();
+	$msg ->register($lesson[1]);
+	//MAIL notifiaction :new lesson : cost (30)
