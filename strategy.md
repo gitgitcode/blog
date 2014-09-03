@@ -70,7 +70,7 @@
 >
 	class RegistrationMgr{
 		function register(lesson $lesson){
-			$notifier = Notifier::getNotifier();
+			$notifier = Notifier::getNotifier();//调用静态方法
 			$notifier->inform("new lesson : cost ({$lesson->cost()})");
 		}
 	}
@@ -107,3 +107,5 @@
 	$msg = new RegistrationMgr();
 	$msg ->register($lesson[1]);
 	//MAIL notifiaction :new lesson : cost (30)
+>
+	感觉这段内容理解起来暂时没有找到类似的例子 ，就代码理解代码感觉总是可以看懂但是无法理解为什么或如何做到这样。
