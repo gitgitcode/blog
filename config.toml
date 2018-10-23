@@ -2,6 +2,3 @@ baseURL = "http://gitgitcode.github.io"
 languageCode = "en-us"
 title = "My New Hugo Site"
 theme = "ananke"
-canonifyurls: true
-indexes:
-  category: "categories"
