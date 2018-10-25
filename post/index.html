@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>My New Hugo Site </title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.49" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.e08a958ae3e530145318b6373195c765.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+      <link href="http://gitgitcode.github.io/post/index.xml" rel="alternate" type="application/rss+xml" title="My New Hugo Site" />
+      <link href="http://gitgitcode.github.io/post/index.xml" rel="feed" type="application/rss+xml" title="My New Hugo Site" />
+    
+
+    <meta property="og:title" content="Posts" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://gitgitcode.github.io/post/" />
+
+<meta itemprop="name" content="Posts">
+<meta itemprop="description" content="">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Posts"/>
+<meta name="twitter:description" content=""/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+
+  
+  
+  <header class="cover bg-top" style="background-image: url('http://gitgitcode.github.io/images/gohugo-default-sample-hero-image.jpg');">
+    <div class="bg-black-60">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="http://gitgitcode.github.io" class="f3 fw2 hover-white no-underline white-90 dib">
+      My New Hugo Site
+    </a>
+    <div class="flex-l items-center">
+      
+      
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv4 pv6-l ph3 ph4-ns">
+        <h1 class="f2 f-subheadline-l fw2 white-90 mb0 lh-title">
+          Posts
+        </h1>
+        
+      </div>
+    </div>
+  </header>
+
+
+    <main class="pb7" role="main">
+      
+
+  <article class="pa3 pa4-ns nested-copy-line-height nested-img">
+  <main class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
+    
+  </main>
+    <section class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        January 1, 0001
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/hash%E7%AE%97%E6%B3%95/" class="link black dim">
+        
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Hash 算法与数据库实现 标签（空格分隔）： 未分类
+Hash 算法与数据库实现 Hash表 （HashTable）又称三列表，通过把关键字Key映射到数组中的一个位置来访问记录，以加快查找速度。 这个映射函数称为Hash函数，存放记录的数组称为Hash表。
+Hash 函数 Hash函数的作用是把任意长度的输入，通过hash算法变换成固定长度的输出，概述出就是Hash值。 这种转换是一种压缩映射，就是hash值的空间通常远小于输入的空间，不同的输入可能会散列成相同的输出 ，而不可能从Hash值来唯一地确定输入的值。   Hash算法满足条件： 每个关键字都可以均匀地分布到Hash表任意一个位置，并与其他已被散列到Hash表的关键字不发生冲突。  Hash算法 关键字k可能是整数或者字符串，可以按照关键字的类型设计不同的Hash算法。  整数关键字的Hash算法有 &gt;* 直接取余法 &gt;* 乘积取证法 &gt;* Times33
+##直接取余法 直接用关键字k除以Hash表的大小m取余数
+ h（k）= k mod m  如果hash表的大小为 m = 12 ，所给关键字为k=100，则h（k）=4. 直接求余，速度快。
+##乘积取整法
+乘积取整法首先使用关键 K 乘以一个常数A（0 &lt; A &lt; 1）, 并取出kA的小数部分。然后用Hash表达小m乘以这个值，再取出整数部分即可。
+ h（k）=floor（m*（kA mod 1））  其中，kA mod 1 表示 KA的小数部分，floor是取整操作。 当关键字是字符串的时候，就不能使用上面的Hash算法。因为字符串是有字符组成，所以可以把字符串所有字符的ASCII码加起来得到一个整数，然后再按照上面的Hash算法去计算即可：
+# 简单算法描述 不可用于实际开发 function hash_fun($key,$m){ $strlen = strlen($key); $hashval = 0; for($i =0 ;$i&lt;$strlen;$i++){ $hasval +=ord($key($i)); } return $haval % $m; }  ##经典Hash算法Times33 算法思路就是不断乘以33，效果和随机性都非常好
+    </div>
+  </div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        January 1, 0001
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/readme/" class="link black dim">
+        
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      phppractice Review &amp; Learn training
+    </div>
+  </div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        January 1, 0001
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/grep/" class="link black dim">
+        
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      ##grep 家族
+grep 包括 grep，egrep和fgrep组成。grep命令在文件中全局查找指定的 正则表达式，并且打印所有包含该表达式的行。egrep和fgrep只是grep的 变体。 egrep 是grep的扩展，支持更多的表达式元字符。 fgrep 被称为固定grep（fixed grep） 有时也被称为快速grep（fast grep） 它按字面的解释所有的字符，元字符不被特殊处理，他们只匹配自己。
+Sun公司的Solaris操作系统上也可以找到GNU版的grep，目录/usr/xpg4/bin。
+grep 命令
+grep 由来，在ex编辑器中查找某个字符串需要在ex的命令提示符后键入： :/pattern/p
+字符&rdquo;p&rdquo;表示打印（print）命令，所以包含字符串pattern的第一行的内容会被打印出来。 如果希望打印所有pattern的行，可以输入： :/g/pattern/p 当g出现在pattern前面时，其含义是“文件中所有的行”，或“执行全局替换”。 被查找的模式称作正则表达式（regular expression），因此可以用RE来替换pattern，于是上面这条命令就变成了： :g/RE/p 这就是grep的含义和他的名称来源。它表示“全局查找正则表达式（RE）并且打印 结果行。”
+=== 一句话：
+总是编辑器查找文字而来，查找文件中[查找规则对应文字]所在行。g/RE/p grep 如何工作
+关键词：正则 模式 。就是pattern -&gt;RE （regular expression） grep 命令在一个或多个文件中查找某个字符模式。如果这个模式中包含空格， 就必须用引号把他括起来。grep命令中，模式可以是一个被引号括起来的字符串， 也可以是单个字词（word或标记token），位于模式之后的单词都被视为文件名。 grep 将输出发送到屏幕，它不会对输入文件进行任何修改或变化。
+ 命令格式 grep word/token filename filename grep命令本身 + 关键词 + 文件名 +文件名   例 [root@A Desktop]# grep ntp /etc/passwd #在/etc/passwd 文件中查找ntp ntp:x:38:38::/etc/ntp:/sbin/nologin #返回包含ntp所在行  grep在文件/etc/passwd中查找模式ntp，查成功文件对应行显示在屏幕上，没有成功 就不会有任何输出，如果文件不合法或不存在屏幕会报错信息。
+    </div>
+  </div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        January 1, 0001
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/strategy%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F/" class="link black dim">
+        
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+       组合 聚合 被引用的对象实例成为对象的一部分 ###策略模式 Strategy 。策略模式 适用于将一组算法一如到一个单独的类型中。
+ abstract class lesson{ private $duration; private $constStrategy; function __construct($duration, CostStrategy $strategy ){//类型检查 必须是CostStrategy 类 $this-&gt;duration = $duration; $this-&gt;constStrategy = $strategy;//将算法提取为 CostStrategy 类 ，放置在共同接口中 } function cost(){ return $this-&gt;constStrategy-&gt;cost($this); } function chargeType(){ return $this-&gt;constStrategy-&gt;chargeType(); } function getDuration(){ return $this-&gt;duration; } } class lecture extends lesson { } class seminar extends lesson{ }    //将算法提取为 CostStrategy 类 ，放置在共同接口中每个算法只实现一次 abstract class CostStrategy { abstract function cost( lesson $lesson ); abstract function chargeType(); }    class timedcoststrategy extends CostStrategy{ function cost(lesson $lesson){ return ($lesson-&gt;getDuration() * 5 ); } function chargeType(){ return &quot;hourly rate &quot;; } } class fixedcoststrategy extends CostStrategy{ function cost(lesson $lesson){ return 30; } function chargeType(){ return &quot;fixed rate &quot;; } }    //动态组合重组对象 相对于 继承要好很多    $lesson[] = new seminar(7,new timedcoststrategy()); $lesson[] = new lecture(9,new fixedcoststrategy()); foreach ($lesson as $key =&gt; $value) { print &quot;lesson charge {$value-&gt;cost()} &quot;; print &quot;lcharge type: {$value-&gt;chargeType()} &lt;br/&gt;&quot;; } //lesson charge 35lcharge type: hourly rate //lesson charge 30lcharge type: fixed rate   class RegistrationMgr{ function register(lesson $lesson){ $notifier = Notifier::getNotifier();//调用静态方法 $notifier-&gt;inform(&quot;new lesson : cost ({$lesson-&gt;cost()})&quot;); } }   abstract class Notifier{//抽象类 static function getNotifier(){//静态方法，static 指向当前调用本身 if(rand(1,2)==1){ return new MailNotifier(); }else{ return new TextNotifier(); } } //$notifier = Notifier::getNotifier(); 外部调用 //$notifier-&gt;inform(&quot;new lesson : cost ({$lesson-&gt;cost()})&quot;); 通过 RegistrationMgr 实现 abstract function inform($message); } class MailNotifier extends Notifier{ function inform($message){ print &quot;MAIL notifiaction :{$message}&quot;; } } class TextNotifier extends Notifier{ function inform($message){ print &quot;Text notifiaction :{$message}&quot;; } } $msg = new RegistrationMgr(); $msg -&gt;register($lesson[1]); //MAIL notifiaction :new lesson : cost (30)   感觉这段内容理解起来暂时没有找到类似的例子 ，就代码理解代码感觉总是可以看懂但是无法理解为什么或如何做到这样。   
+    </div>
+  </div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        January 1, 0001
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/" class="link black dim">
+        
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+       单例模式 单例是一种对全局变量的改进，你无法用错误的类型数据覆写一个单例。  单例模式和全局变量都可以在系统中任意地方被访问。同时造成误用。 可能会导致很强的依赖关系，如果改变单例那么所有使用该单例的类都会受到影响。   单例对象的全局化的性质会是程序员绕过类接口定义的通信线路.当单例被使用时，依赖便会隐藏于方法内部，并不会出现在方法声明中，使得依赖难以追踪。  preferences 对象应该可以被系统中任何对象使用 不应该被存储在被覆写的全局变量中 不应超过一个preferences对象，假设y设置pref一个属性， z对象不需要通过其他对象就可以直接获得该属性的值。    class preferences{ private $props = array();    private static $instance; //只能被类调用而不是对象调用    private function __construct(){ }    public static function getinstance(){ if(empty(self::$instance)){ self::$instance = new preferences(); }//访问静态属性，当为空时创建对象，并保存在静态属性中 return self::$instance; }    static function static_getinstance(){ if(empty(self::$instance)){ self::$instance = new static();//通过static关键字调用 } return self::$instance; } public function setproperty($key,$val){ $this-&gt;propos[$key] =$val; } public function getproperty($key){ return $this-&gt;propos[$key]; } } $pref = preferences::getinstance(); $pref-&gt;setproperty(&quot;name&quot;,&quot;jack&quot;); //echo $pref-&gt;getproperty('name'); unset($pref);//移除引用 $pref2=preferences::getinstance(); echo $pref2-&gt;getproperty('name'); //jack $pref2-&gt;setproperty(&quot;name&quot;,&quot;Rosie&quot;); // unset($pref2); $pref3=preferences::static_getinstance(); echo $pref3-&gt;getproperty('name'); //Rosie  
+    </div>
+  </div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        January 1, 0001
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/" class="link black dim">
+        
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+       工厂方法模式  abstract class ApptEncoder{ abstract function encode(); } class BloggsApptEncoder extends ApptEncoder{ function encode(){ echo &quot; Appintment Data encoded in BloggsCal format\n&quot;; } } class MegaApptEncoder extends ApptEncoder{ function encode(){ echo &quot;Appointment data encoded in MegaCal format\n&quot;; } }  /* * 基础生成对象方法 * CommsManger 类负责生成BloggsApptEncoder类。 */   class CommsManager{ function getApptEncode(){ return new BloggsApptEncoder(); } function MegaApptEncoder(){ return new MegaApptEncoder(); } } $comms = new CommsManager(); $blogg=$comms-&gt;getApptEncode(); $blogg-&gt;encode(); //Appintment Data encoded in BloggsCal format $Mega=$comms-&gt;MegaApptEncoder(); $Mega-&gt;encode(); //Appointment data encoded in MegaCal format  /* * 通过策略模式声称对象 * 创建对象需要指定条件 * 增加新规则时需要重复多条规则判断语句 */   class StrategyCommsManger{ const BLOGGS = 1; const MEGA = 2; private $mode = 1; function __construct($mode){ $this-&gt;mode = $mode; } function getApptEncoder(){ //检查属性 switch($this-&gt;mode){ case (self::MEGA): return new MegaApptEncoder(); break; default: return new BloggsApptEncoder(); } } } $strategy = new StrategyCommsManger(StrategyCommsManger::MEGA); //传参 StrategyCommsManger::MEGA $apptEncoder = $strategy -&gt;getApptEncoder(); print $apptEncoder-&gt;encode(); //Appointment data encoded in MegaCal format  
+    </div>
+  </div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        January 1, 0001
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/%E7%94%9F%E6%88%90%E5%AF%B9%E8%B1%A1%E5%A4%9A%E6%80%81%E5%AE%9E%E4%BE%8B%E5%8C%96%E5%A7%94%E6%89%98/" class="link black dim">
+        
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+       生成对象和问题和解决方法   abstract class employee{    protected $name; private static $types = array('minion','cluedup','wellconneted'); //对象是实例化委托出来 创建对象策略 static function recruit($name){ //静态方法 $num = rand(1,count(self::$types) -1); $class = self::$types[$num]; return new $class($name); } function __construct($name){ $this-&gt;name = $name; } abstract function fire(); }     class minion extends employee{//属下 function fire(){ print &quot;{$this-&gt;name} : i'll clear my desk&lt;br/&gt;&quot;; } }     class nestyboss{ private $employee = array(); //必须实例化minion 才能获得 minion 对象 function addemployess($employeeName){ $this-&gt;employee[] = new minion($employeeName); } //使用employess 类 多态的方式 但是没有定义创建对象策略 function NewAddEmployess(employee $employee){ $this-&gt;employee[] = $employee; } function projectfails(){ if( count($this-&gt;employee) &gt;0 ){ $emp = array_pop($this-&gt;employee); $emp-&gt;fire(); } } }     class cluedup extends employee{ function fire(){ print &quot;$this-&gt;name : i'll call my lowyer &lt;br&gt;&quot;; } } $boss= new nestyboss(); $boss-&gt;addemployess('A');  //必须实例化minion 才能获得 minion 对象  $boss-&gt;addemployess('B');  //必须实例化minion 才能获得 minion 对象  $boss-&gt;NewAddEmployess( new cluedup('xiaoC') );//实例化  //创建对象策略  $boss-&gt;NewAddEmployess( employee::recruit('harry') ); $boss-&gt;projectfails(); $boss-&gt;projectfails(); $boss-&gt;projectfails(); $boss-&gt;projectfails(); $boss-&gt;projectfails();   通过静态方法实例化，生成对象。  
+    </div>
+  </div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        January 1, 0001
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/%E8%B0%9C%E9%A2%98/" class="link black dim">
+        
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      1完全正确的是 c a php -r &ldquo;echo 123&rdquo;
+b /* $f-&gt;setPattern(&lsquo;/^\d./&lsquo;);/ c &lt;?php echo &lsquo;123&rsquo;; d &lt;? ?&gt;
+2正确的是 b a var_dump(&lsquo;1.22&rsquo; &gt; &lsquo;01.23&rsquo;); // bool(true) b var_dump(&lsquo;1.22.00&rsquo; &gt; &lsquo;01.23.00&rsquo;); // bool(true) c var_dump(&lsquo;1-22-00&rsquo; &gt; &lsquo;1-23-00&rsquo;); // bool(true) d var_dump((float)&lsquo;1.22.00&rsquo; &gt; (float)&lsquo;01.23.00&rsquo;); // bool(true)
+3 Linux 重启命令是 d a init 0 b init 3 c init 5 d init 6
+1.mysql常用表引擎极其不同
+2.描述SQL语句的执行流程
+3.简述php的运行模式
+4.
+    </div>
+  </div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        January 1, 0001
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/%E9%87%8D%E8%A6%81%E6%A6%82%E5%BF%B5/" class="link black dim">
+        
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      #概念
+##解耦
+ 如果类之间有非常强的依赖性，那么这样的系统就很难维护，因为系统里的一个改动会引起一连串的相关改动。 问题 重用性是面向对象设计的主要目标之一。 而紧耦合 tight-coupling 便是他的敌人， 当我们看到系统中一个组件的改变迫使系统其他许多地方也发生改变的时候就可以诊断为紧耦合了。 为了能安全地做变动，我们总是希望能够独立存在的组件。 再修改组件时，其独立程度会决定你的修改对系统中其他组件的影响程度，系统的其他组件甚至有可能因此失败。 方法 策略模式，将算法提取出来，放置在共同的接口。而不是通过if判断来产生依赖关系。  
+    </div>
+  </div>
+
+        </div>
+      
+    </section>
+    
+
+  </article>
+
+    </main>
+    <footer class="bg-near-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://gitgitcode.github.io" >
+    &copy; 2018 My New Hugo Site
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

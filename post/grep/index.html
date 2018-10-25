@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>My New Hugo Site </title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.49" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.e08a958ae3e530145318b6373195c765.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="" />
+<meta property="og:description" content="##grep 家族
+grep 包括 grep，egrep和fgrep组成。grep命令在文件中全局查找指定的 正则表达式，并且打印所有包含该表达式的行。egrep和fgrep只是grep的 变体。 egrep 是grep的扩展，支持更多的表达式元字符。 fgrep 被称为固定grep（fixed grep） 有时也被称为快速grep（fast grep） 它按字面的解释所有的字符，元字符不被特殊处理，他们只匹配自己。
+Sun公司的Solaris操作系统上也可以找到GNU版的grep，目录/usr/xpg4/bin。
+grep 命令
+grep 由来，在ex编辑器中查找某个字符串需要在ex的命令提示符后键入： :/pattern/p
+字符&rdquo;p&rdquo;表示打印（print）命令，所以包含字符串pattern的第一行的内容会被打印出来。 如果希望打印所有pattern的行，可以输入： :/g/pattern/p 当g出现在pattern前面时，其含义是“文件中所有的行”，或“执行全局替换”。 被查找的模式称作正则表达式（regular expression），因此可以用RE来替换pattern，于是上面这条命令就变成了： :g/RE/p 这就是grep的含义和他的名称来源。它表示“全局查找正则表达式（RE）并且打印 结果行。”
+=== 一句话：
+总是编辑器查找文字而来，查找文件中[查找规则对应文字]所在行。g/RE/p grep 如何工作
+关键词：正则 模式 。就是pattern -&gt;RE （regular expression） grep 命令在一个或多个文件中查找某个字符模式。如果这个模式中包含空格， 就必须用引号把他括起来。grep命令中，模式可以是一个被引号括起来的字符串， 也可以是单个字词（word或标记token），位于模式之后的单词都被视为文件名。 grep 将输出发送到屏幕，它不会对输入文件进行任何修改或变化。
+ 命令格式 grep word/token filename filename grep命令本身 &#43; 关键词 &#43; 文件名 &#43;文件名   例 [root@A Desktop]# grep ntp /etc/passwd #在/etc/passwd 文件中查找ntp ntp:x:38:38::/etc/ntp:/sbin/nologin #返回包含ntp所在行  grep在文件/etc/passwd中查找模式ntp，查成功文件对应行显示在屏幕上，没有成功 就不会有任何输出，如果文件不合法或不存在屏幕会报错信息。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://gitgitcode.github.io/post/grep/" />
+
+<meta itemprop="name" content="">
+<meta itemprop="description" content="##grep 家族
+grep 包括 grep，egrep和fgrep组成。grep命令在文件中全局查找指定的 正则表达式，并且打印所有包含该表达式的行。egrep和fgrep只是grep的 变体。 egrep 是grep的扩展，支持更多的表达式元字符。 fgrep 被称为固定grep（fixed grep） 有时也被称为快速grep（fast grep） 它按字面的解释所有的字符，元字符不被特殊处理，他们只匹配自己。
+Sun公司的Solaris操作系统上也可以找到GNU版的grep，目录/usr/xpg4/bin。
+grep 命令
+grep 由来，在ex编辑器中查找某个字符串需要在ex的命令提示符后键入： :/pattern/p
+字符&rdquo;p&rdquo;表示打印（print）命令，所以包含字符串pattern的第一行的内容会被打印出来。 如果希望打印所有pattern的行，可以输入： :/g/pattern/p 当g出现在pattern前面时，其含义是“文件中所有的行”，或“执行全局替换”。 被查找的模式称作正则表达式（regular expression），因此可以用RE来替换pattern，于是上面这条命令就变成了： :g/RE/p 这就是grep的含义和他的名称来源。它表示“全局查找正则表达式（RE）并且打印 结果行。”
+=== 一句话：
+总是编辑器查找文字而来，查找文件中[查找规则对应文字]所在行。g/RE/p grep 如何工作
+关键词：正则 模式 。就是pattern -&gt;RE （regular expression） grep 命令在一个或多个文件中查找某个字符模式。如果这个模式中包含空格， 就必须用引号把他括起来。grep命令中，模式可以是一个被引号括起来的字符串， 也可以是单个字词（word或标记token），位于模式之后的单词都被视为文件名。 grep 将输出发送到屏幕，它不会对输入文件进行任何修改或变化。
+ 命令格式 grep word/token filename filename grep命令本身 &#43; 关键词 &#43; 文件名 &#43;文件名   例 [root@A Desktop]# grep ntp /etc/passwd #在/etc/passwd 文件中查找ntp ntp:x:38:38::/etc/ntp:/sbin/nologin #返回包含ntp所在行  grep在文件/etc/passwd中查找模式ntp，查成功文件对应行显示在屏幕上，没有成功 就不会有任何输出，如果文件不合法或不存在屏幕会报错信息。">
+
+
+
+<meta itemprop="wordCount" content="144">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="##grep 家族
+grep 包括 grep，egrep和fgrep组成。grep命令在文件中全局查找指定的 正则表达式，并且打印所有包含该表达式的行。egrep和fgrep只是grep的 变体。 egrep 是grep的扩展，支持更多的表达式元字符。 fgrep 被称为固定grep（fixed grep） 有时也被称为快速grep（fast grep） 它按字面的解释所有的字符，元字符不被特殊处理，他们只匹配自己。
+Sun公司的Solaris操作系统上也可以找到GNU版的grep，目录/usr/xpg4/bin。
+grep 命令
+grep 由来，在ex编辑器中查找某个字符串需要在ex的命令提示符后键入： :/pattern/p
+字符&rdquo;p&rdquo;表示打印（print）命令，所以包含字符串pattern的第一行的内容会被打印出来。 如果希望打印所有pattern的行，可以输入： :/g/pattern/p 当g出现在pattern前面时，其含义是“文件中所有的行”，或“执行全局替换”。 被查找的模式称作正则表达式（regular expression），因此可以用RE来替换pattern，于是上面这条命令就变成了： :g/RE/p 这就是grep的含义和他的名称来源。它表示“全局查找正则表达式（RE）并且打印 结果行。”
+=== 一句话：
+总是编辑器查找文字而来，查找文件中[查找规则对应文字]所在行。g/RE/p grep 如何工作
+关键词：正则 模式 。就是pattern -&gt;RE （regular expression） grep 命令在一个或多个文件中查找某个字符模式。如果这个模式中包含空格， 就必须用引号把他括起来。grep命令中，模式可以是一个被引号括起来的字符串， 也可以是单个字词（word或标记token），位于模式之后的单词都被视为文件名。 grep 将输出发送到屏幕，它不会对输入文件进行任何修改或变化。
+ 命令格式 grep word/token filename filename grep命令本身 &#43; 关键词 &#43; 文件名 &#43;文件名   例 [root@A Desktop]# grep ntp /etc/passwd #在/etc/passwd 文件中查找ntp ntp:x:38:38::/etc/ntp:/sbin/nologin #返回包含ntp所在行  grep在文件/etc/passwd中查找模式ntp，查成功文件对应行显示在屏幕上，没有成功 就不会有任何输出，如果文件不合法或不存在屏幕会报错信息。"/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="http://gitgitcode.github.io" class="f3 fw2 hover-white no-underline white-90 dib">
+      My New Hugo Site
+    </a>
+    <div class="flex-l items-center">
+      
+      
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  <article class="flex-l flex-wrap justify-between mw8 center ph3 ph0-l">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1"></h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="0001-01-01T00:00:00Z">January 1, 0001</time>
+    </header>
+
+    <main class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+
+<p>##grep 家族</p>
+
+<p>grep 包括 grep，egrep和fgrep组成。grep命令在文件中全局查找指定的
+正则表达式，并且打印所有包含该表达式的行。egrep和fgrep只是grep的
+变体。
+egrep 是grep的扩展，支持更多的表达式元字符。
+fgrep 被称为固定grep（fixed grep） 有时也被称为快速grep（fast grep）
+它按字面的解释所有的字符，元字符不被特殊处理，他们只匹配自己。</p>
+
+<p>Sun公司的Solaris操作系统上也可以找到GNU版的grep，目录/usr/xpg4/bin。</p>
+
+<p>grep 命令</p>
+
+<p>grep 由来，在ex编辑器中查找某个字符串需要在ex的命令提示符后键入：
+:/pattern/p</p>
+
+<p>字符&rdquo;p&rdquo;表示打印（print）命令，所以包含字符串pattern的第一行的内容会被打印出来。
+如果希望打印所有pattern的行，可以输入：
+:/g/pattern/p
+当g出现在pattern前面时，其含义是“文件中所有的行”，或“执行全局替换”。
+被查找的模式称作正则表达式（regular expression），因此可以用RE来替换pattern，于是上面这条命令就变成了：
+:g/RE/p
+这就是grep的含义和他的名称来源。它表示“全局查找正则表达式（RE）并且打印
+结果行。”</p>
+
+<p>===
+一句话：</p>
+
+<h1 id="总是编辑器查找文字而来-查找文件中-查找规则对应文字-所在行-g-re-p">总是编辑器查找文字而来，查找文件中[查找规则对应文字]所在行。g/RE/p</h1>
+
+<p>grep 如何工作</p>
+
+<p>关键词：正则 模式 。就是pattern -&gt;RE （regular expression）
+grep 命令在一个或多个文件中查找某个字符模式。如果这个模式中包含空格，
+就必须用引号把他括起来。grep命令中，模式可以是一个被引号括起来的字符串，
+也可以是单个字词（word或标记token），位于模式之后的单词都被视为文件名。
+grep 将输出发送到屏幕，它不会对输入文件进行任何修改或变化。</p>
+
+<ul>
+<li>命令格式
+grep word/token  filename filename
+grep命令本身 + 关键词 + 文件名 +文件名</li>
+</ul>
+
+<p><code>
+例
+[root@A Desktop]# grep ntp  /etc/passwd  #在/etc/passwd 文件中查找ntp 
+ntp:x:38:38::/etc/ntp:/sbin/nologin      #返回包含ntp所在行
+</code>
+grep在文件/etc/passwd中查找模式ntp，查成功文件对应行显示在屏幕上，没有成功
+就不会有任何输出，如果文件不合法或不存在屏幕会报错信息。</p>
+
+<p>grep 退出状态 echo $?</p>
+
+<p>grep命令成功返回的退出状态为0，表示成功；
+如果没有找到退出状态是1；
+找不到指定文件时退出状态时2。</p>
+
+<p>###参数</p>
+
+<p>-b 在每一行前面加上其所在的块号，根据上下文定位磁盘块时可能会用到。
+-c 显示匹配到的行的数目，而不显示行的内容。
+-h 不显示文件名
+-i 比较字符时忽略大小写
+-l 只列出匹配行所在文件的文件名（每个文件名只列一次），文件名之间用换行符分割
+-n 在每一行前面加上它在文件中的相对行号
+-s 无声操作，即使显示报错信息，以检查退出状态
+-v 反响查找，只显示不匹配的行
+-w 把表达式作为词来查找，象&lt;&gt;所包含一样。</p>
+
+<p>###元字符
+元字符，表达的含义不同于字符本身的字面含义，用来更精确定义要找模式。</p>
+
+<pre><code>^ 行首定位符     '^user'      匹配所有以user开头的行
+
+$ 行尾定位符     'user$'      匹配所有以user结尾的行
+
+. 匹配一个字符   'u..r'       匹配包含一个u后跟两个字符再跟一个e的行
+
+[]匹配一组字符中任一个   '[Uu]ser'  匹配user或者User的行
+
+[^] 匹配不在指定字符组内的字     '[^A-K]ser'    匹配包含一个不再A至K之间的字符，并且该字符紧跟着ser
+
+\&lt; 词首定位符   '\&lt;user'    匹配含有user开头的词的行
+
+\&gt; 词尾定位符    'user\&gt;'   匹配含有user结尾的词的行
+
+\(..\) 标记匹配到的字符     '\(user\)ing'   标记寄存器中的一段字符，被记作1号寄存器。
+如果之后要引用这段字符，可以用\1来重复该模式。最多可以设置9个标签，从左开始编号，最左边的是第一号。
+左边的这个 例子中，模式user被保存在1号寄存器里，之后可以用\1来引用它。
+
+x\{m\} 字符x的重复出现次数      'c\{5\}'        匹配连续出现5个c
+
+x\{m,\}  m次，至少m次，至少     'c\{5\}'        匹配至少5个c
+
+x\{m,n\} m次但不超过n次         'c\{5,10\}'     匹配5~10个c的行
+</code></pre>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+        
+      </div>
+    </main>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-near-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://gitgitcode.github.io" >
+    &copy; 2018 My New Hugo Site
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
