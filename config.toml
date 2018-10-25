@@ -1,4 +1,11 @@
-baseURL = "http://gitgitcode.github.io"
-languageCode = "en-us"
-title = "My New Hugo Site"
-theme = "ananke"
+---
+contentdir: "content"
+layoutdir: "layouts"
+publishdir: "public"
+indexes:
+  category: "categories"
+baseurl: "http://gitgitcode.github.io"
+title: "Hugo Blog Template for GitHub Pages"
+canonifyurls: true
+theme: "ananke"
+...
