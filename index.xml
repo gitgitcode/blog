@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
+    <title>gitgitcode</title>
     <link>http://gitgitcode.github.io/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <description>Recent content on gitgitcode</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
@@ -42,16 +42,10 @@ Hash 函数 Hash函数的作用是把任意长度的输入，通过hash算法变
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://gitgitcode.github.io/post/grep/</guid>
-      <description>##grep 家族
-grep 包括 grep，egrep和fgrep组成。grep命令在文件中全局查找指定的 正则表达式，并且打印所有包含该表达式的行。egrep和fgrep只是grep的 变体。 egrep 是grep的扩展，支持更多的表达式元字符。 fgrep 被称为固定grep（fixed grep） 有时也被称为快速grep（fast grep） 它按字面的解释所有的字符，元字符不被特殊处理，他们只匹配自己。
-Sun公司的Solaris操作系统上也可以找到GNU版的grep，目录/usr/xpg4/bin。
-grep 命令
-grep 由来，在ex编辑器中查找某个字符串需要在ex的命令提示符后键入： :/pattern/p
-字符&amp;rdquo;p&amp;rdquo;表示打印（print）命令，所以包含字符串pattern的第一行的内容会被打印出来。 如果希望打印所有pattern的行，可以输入： :/g/pattern/p 当g出现在pattern前面时，其含义是“文件中所有的行”，或“执行全局替换”。 被查找的模式称作正则表达式（regular expression），因此可以用RE来替换pattern，于是上面这条命令就变成了： :g/RE/p 这就是grep的含义和他的名称来源。它表示“全局查找正则表达式（RE）并且打印 结果行。”
-=== 一句话：
-总是编辑器查找文字而来，查找文件中[查找规则对应文字]所在行。g/RE/p grep 如何工作
-关键词：正则 模式 。就是pattern -&amp;gt;RE （regular expression） grep 命令在一个或多个文件中查找某个字符模式。如果这个模式中包含空格， 就必须用引号把他括起来。grep命令中，模式可以是一个被引号括起来的字符串， 也可以是单个字词（word或标记token），位于模式之后的单词都被视为文件名。 grep 将输出发送到屏幕，它不会对输入文件进行任何修改或变化。
- 命令格式 grep word/token filename filename grep命令本身 + 关键词 + 文件名 +文件名   例 [root@A Desktop]# grep ntp /etc/passwd #在/etc/passwd 文件中查找ntp ntp:x:38:38::/etc/ntp:/sbin/nologin #返回包含ntp所在行  grep在文件/etc/passwd中查找模式ntp，查成功文件对应行显示在屏幕上，没有成功 就不会有任何输出，如果文件不合法或不存在屏幕会报错信息。</description>
+      <description>grep 家族 grep 包括 grep，egrep和fgrep组成。grep命令在文件中全局查找指定的正则表达式，并且打印所有包含该表达式的行。egrep和fgrep只是grep的变体。 - egrep 是grep的扩展，支持更多的表达式元字符。 - fgrep 被称为固定grep（fixed grep） 有时也被称为快速grep（fast grep）它按字面的解释所有的字符，元字符不被特殊处理，他们只匹配自己。   Sun公司的Solaris操作系统上也可以找到GNU版的grep，目录/usr/xpg4/bin。  grep 命令 grep 由来，在ex编辑器中查找某个字符串需要在ex的命令提示符后键入： :/pattern/p 字符&amp;quot;p&amp;quot;表示打印（print）命令，所以包含字符串pattern的第一行的内容会被打印出来。 如果希望打印所有pattern的行，可以输入： :/g/pattern/p 当g出现在pattern前面时，其含义是“文件中所有的行”，或“执行全局替换”。 被查找的模式称作正则表达式（regular expression），因此可以用RE来替换pattern，于是上面这条命令就变成了： :g/RE/p 这就是grep的含义和他的名称来源。它表示“全局查找正则表达式（RE）并且打印结果行。”  一句话： 总是编辑器查找文字而来，查找文件中[查找规则对应文字]所在行。g/RE/p  grep 如何工作  关键词：正则 模式 。就是pattern -&amp;gt;RE （regular expression）
+grep 命令在一个或多个文件中查找某个字符模式。如果这个模式中包含空格，就必须用引号把他括起来。grep命令中，模式可以是一个被引号括起来的字符串，也可以是单个字词（word或标记token），位于模式之后的单词都被视为文件名。 grep 将输出发送到屏幕，它不会对输入文件进行任何修改或变化。
+ 命令格式
+  # grep命令本身 + 关键词 + 文件名 +文件名 grep word/token filename filename  例 [root@A Desktop]# grep ntp /etc/passwd #在/etc/passwd 文件中查找ntp ntp:x:38:38::/etc/ntp:/sbin/nologin #返回包含ntp所在行 grep在文件/etc/passwd中查找模式ntp，查成功文件对应行显示在屏幕上，没有成功就不会有任何输出，如果文件不合法或不存在屏幕会报错信息。  grep 退出状态 echo $?</description>
     </item>
     
     <item>

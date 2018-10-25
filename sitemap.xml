@@ -44,17 +44,17 @@
   </url>
   
   <url>
-    <loc>http://gitgitcode.github.io/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://gitgitcode.github.io/post/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://gitgitcode.github.io/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://gitgitcode.github.io/</loc>
     <priority>0</priority>
   </url>
   
