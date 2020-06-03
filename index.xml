@@ -1,28 +1,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>gitgitcode on gitgitcode</title>
-    <link>https://gitgitcode.github.io/</link>
+    <link>xtangelo.com/</link>
     <description>Recent content in gitgitcode on gitgitcode</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 01 Jun 2020 15:43:52 +0800</lastBuildDate>
-    <atom:link href="https://gitgitcode.github.io/" rel="self" type="application/rss+xml" />
+    <atom:link href="xtangelo.com/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Posts</title>
-      <link>https://gitgitcode.github.io/posts/</link>
+      <link>xtangelo.com/posts/</link>
       <pubDate>Mon, 01 Jun 2020 15:43:52 +0800</pubDate>
       
-      <guid>https://gitgitcode.github.io/posts/</guid>
+      <guid>xtangelo.com/posts/</guid>
       <description></description>
     </item>
     
     <item>
       <title>About</title>
-      <link>https://gitgitcode.github.io/about/</link>
+      <link>xtangelo.com/about/</link>
       <pubDate>Mon, 01 Jun 2020 14:06:41 +0800</pubDate>
       
-      <guid>https://gitgitcode.github.io/about/</guid>
+      <guid>xtangelo.com/about/</guid>
       <description>&lt;h2 id=&#34;not-test&#34;&gt;not test&lt;/h2&gt;
 &lt;p&gt;一个新的博客&lt;/p&gt;
 </description>
@@ -30,10 +30,10 @@
     
     <item>
       <title>Search Results</title>
-      <link>https://gitgitcode.github.io/search/</link>
+      <link>xtangelo.com/search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://gitgitcode.github.io/search/</guid>
+      <guid>xtangelo.com/search/</guid>
       <description></description>
     </item>
     
