@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on xtangelo.com</title>
-    <link>/categories/</link>
+    <link>xtangelo.com/categories/</link>
     <description>Recent content in Categories on xtangelo.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 01 Jun 2020 15:43:52 +0800</lastBuildDate>
     
-	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="xtangelo.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>blog</title>
-      <link>/categories/blog/</link>
+      <link>xtangelo.com/categories/blog/</link>
       <pubDate>Mon, 01 Jun 2020 15:43:52 +0800</pubDate>
       
-      <guid>/categories/blog/</guid>
+      <guid>xtangelo.com/categories/blog/</guid>
       <description></description>
     </item>
     
