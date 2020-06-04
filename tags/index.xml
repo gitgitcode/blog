@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on xtangelo.com</title>
-    <link>https://xtangelo.com/tags/</link>
+    <link>https://xtangelo.com/tags.html</link>
     <description>Recent content in Tags on xtangelo.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
@@ -13,10 +13,10 @@
     
     <item>
       <title>blog</title>
-      <link>https://xtangelo.com/tags/blog/</link>
+      <link>https://xtangelo.com/tags/blog.html</link>
       <pubDate>Mon, 01 Jun 2020 15:43:52 +0800</pubDate>
       
-      <guid>https://xtangelo.com/tags/blog/</guid>
+      <guid>https://xtangelo.com/tags/blog.html</guid>
       <description></description>
     </item>
     
