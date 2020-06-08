@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on xtangelo.com</title>
-    <link>https://xtangelo.com/posts.html</link>
-    <description>Recent content in Posts on xtangelo.com</description>
+    <title>io.Reader on xtangelo.com</title>
+    <link>https://xtangelo.com/tags/io.reader.html</link>
+    <description>Recent content in io.Reader on xtangelo.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 09 Jun 2020 06:19:56 +0800</lastBuildDate>
     
-	<atom:link href="https://xtangelo.com/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://xtangelo.com/tags/io.reader/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       
       <guid>https://xtangelo.com/2020/readtwicefromthesacmeio-reader.html</guid>
       <description>问题场景 准备在读取一个网络地址，获取页面的html标签结构和内容。找到一些方法，是通过读取```http.Get(testUrl) ``` resp *Response 的内</description>
-    </item>
-    
-    <item>
-      <title>为什么重写blog</title>
-      <link>https://xtangelo.com/2020/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%87%8D%E5%86%99blog.html</link>
-      <pubDate>Mon, 01 Jun 2020 15:43:52 +0800</pubDate>
-      
-      <guid>https://xtangelo.com/2020/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%87%8D%E5%86%99blog.html</guid>
-      <description>重写 重写的意义是否在于优化？或许是，至少或许有改进的方。毕竟在很长的过去时间范围内大多都是 helleWorld！然后就没有然后了。 依旧在gi</description>
     </item>
     
   </channel>
