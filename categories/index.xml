@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on xtangelo.com</title>
-    <link>https://xtangelo.com/categories.html</link>
+    <link>https://xtangelo.com/categories/</link>
     <description>Recent content in Categories on xtangelo.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
@@ -13,10 +13,10 @@
     
     <item>
       <title>blog</title>
-      <link>https://xtangelo.com/categories/blog.html</link>
+      <link>https://xtangelo.com/categories/blog/</link>
       <pubDate>Mon, 01 Jun 2020 15:43:52 +0800</pubDate>
       
-      <guid>https://xtangelo.com/categories/blog.html</guid>
+      <guid>https://xtangelo.com/categories/blog/</guid>
       <description></description>
     </item>
     
