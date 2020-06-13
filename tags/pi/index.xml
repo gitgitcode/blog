@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pi on xtangelo.com</title>
+    <link>https://xtangelo.com/tags/pi/</link>
+    <description>Recent content in pi on xtangelo.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 13 Jun 2020 21:30:49 +0800</lastBuildDate>
+    
+	<atom:link href="https://xtangelo.com/tags/pi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SetRaspberryPiLight 设置树莓派屏幕不关闭</title>
+      <link>https://xtangelo.com/2020/setraspberrylight/</link>
+      <pubDate>Sat, 13 Jun 2020 21:30:49 +0800</pubDate>
+      
+      <guid>https://xtangelo.com/2020/setraspberrylight/</guid>
+      <description>设置树莓派屏幕不自动关闭 树莓派开机后有时候希望连接显示器使用一下，活着插上显示器看一下，设置一些东西，毕竟图形界面有些时候方便操作一些。但是</description>
+    </item>
+    
+  </channel>
+</rss>

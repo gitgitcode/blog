@@ -6,10 +6,28 @@
     <description>Recent content in Tags on xtangelo.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 09 Jun 2020 06:19:56 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jun 2020 21:30:49 +0800</lastBuildDate>
     
 	<atom:link href="https://xtangelo.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Linux</title>
+      <link>https://xtangelo.com/tags/linux/</link>
+      <pubDate>Sat, 13 Jun 2020 21:30:49 +0800</pubDate>
+      
+      <guid>https://xtangelo.com/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pi</title>
+      <link>https://xtangelo.com/tags/pi/</link>
+      <pubDate>Sat, 13 Jun 2020 21:30:49 +0800</pubDate>
+      
+      <guid>https://xtangelo.com/tags/pi/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>golang</title>
@@ -35,6 +53,24 @@
       <pubDate>Tue, 09 Jun 2020 06:19:56 +0800</pubDate>
       
       <guid>https://xtangelo.com/tags/io.reader/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ssh</title>
+      <link>https://xtangelo.com/tags/ssh/</link>
+      <pubDate>Wed, 03 Jun 2020 11:47:07 +0800</pubDate>
+      
+      <guid>https://xtangelo.com/tags/ssh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>安全</title>
+      <link>https://xtangelo.com/tags/%E5%AE%89%E5%85%A8/</link>
+      <pubDate>Wed, 03 Jun 2020 11:47:07 +0800</pubDate>
+      
+      <guid>https://xtangelo.com/tags/%E5%AE%89%E5%85%A8/</guid>
       <description></description>
     </item>
     
