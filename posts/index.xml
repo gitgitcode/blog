@@ -6,10 +6,19 @@
     <description>Recent content in Posts on xtangelo.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 13 Jun 2020 21:30:49 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jun 2020 11:22:57 +0800</lastBuildDate>
     
 	<atom:link href="https://xtangelo.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>MakeTestTagsBadgeForYourProjectOnGitHub github项目ReadMe增加测试覆盖率徽章</title>
+      <link>https://xtangelo.com/2020/maketesttagsiconforyourprojectongithub/</link>
+      <pubDate>Sun, 14 Jun 2020 11:22:57 +0800</pubDate>
+      
+      <guid>https://xtangelo.com/2020/maketesttagsiconforyourprojectongithub/</guid>
+      <description>github项目readme介绍页面有很多徽章，比如测试覆盖率，尝试添加一个看看 Travis CI api.travis-ci.org 看文档和examlp结果几个问题 问题1 go: cannot find main module, but found .git/config</description>
+    </item>
     
     <item>
       <title>SetRaspberryPiLight 设置树莓派屏幕不关闭</title>
