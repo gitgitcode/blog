@@ -70,7 +70,7 @@ if (!doNotTrack) {
     "datePublished": "2020-06-14 11:22:57 \x2b0800 CST",
     "dateModified" : "2020-06-14 11:22:57 \x2b0800 CST",
     "url" : "https:\/\/xtangelo.com\/2020\/maketesttagsiconforyourprojectongithub\/",
-    "wordCount" : "413",
+    "wordCount" : "446",
     "keywords" : [ "github","testing", "xtangelo.com"]
 }
 </script>
@@ -96,11 +96,11 @@ if (!doNotTrack) {
                 
                 <span class="menu">
                 
-                <a class="menu-item" href="/posts/" title="">Posts</a>
+                <a class="menu-item" href="/posts" title="">Posts</a>
                 
-                <a class="menu-item" href="/categories/" title="">Categories</a>
+                <a class="menu-item" href="/categories" title="">Categories</a>
                 
-                <a class="menu-item" href="/tags/" title="">Tags</a>
+                <a class="menu-item" href="/tags" title="">Tags</a>
                 
                 <a class="menu-item" href="/about" title="">About</a>
                 
@@ -131,17 +131,17 @@ if (!doNotTrack) {
                 <nav class="mb-md">
                     
                     
-                        <a class="menu-item" href="/posts/" title="">
+                        <a class="menu-item" href="/posts" title="">
                             <h3>Posts</h3>
                             <div class="menu-active"></div>
                         </a>
                     
-                        <a class="menu-item" href="/categories/" title="">
+                        <a class="menu-item" href="/categories" title="">
                             <h3>Categories</h3>
                             <div class="menu-active"></div>
                         </a>
                     
-                        <a class="menu-item" href="/tags/" title="">
+                        <a class="menu-item" href="/tags" title="">
                             <h3>Tags</h3>
                             <div class="menu-active"></div>
                         </a>
@@ -178,7 +178,7 @@ if (!doNotTrack) {
                         
                         
                 </span>
-                <span class="post-word-count">413 words</span>
+                <span class="post-word-count">446 words</span>
         </div>
     </header>
  
@@ -277,6 +277,30 @@ if (!doNotTrack) {
                 
             
         
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#goreportcard">
+                          <b>∴ goreportcard </b>
+                            </a> ৲º
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
 
     </div>
 
@@ -355,7 +379,20 @@ go get github.com/mattn/goveralls
 <span style="color:#75715e">#得到一个coverage.out文件</span>
 $GOPATH/bin/goveralls  -coverprofile<span style="color:#f92672">=</span>coverage.out -service<span style="color:#f92672">=</span>travis-ci -repotoken 你的repo_token
 </code></pre></div><p>到首页得到覆盖率徽章</p>
-
+<h2 id="goreportcard">goreportcard</h2>
+<ul>
+<li>对文档执行 gofmt -w 格式化文件.</li>
+<li>增加注释</li>
+</ul>
+<p><strong>Results</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">gofmt</span> <span style="color:#ae81ff">100</span><span style="color:#f92672">%</span>
+<span style="color:#a6e22e">go_vet</span> <span style="color:#ae81ff">100</span><span style="color:#f92672">%</span>
+<span style="color:#a6e22e">gocyclo</span> <span style="color:#ae81ff">100</span><span style="color:#f92672">%</span>
+<span style="color:#a6e22e">golint</span> <span style="color:#ae81ff">50</span><span style="color:#f92672">%</span>
+<span style="color:#a6e22e">license</span> <span style="color:#ae81ff">100</span><span style="color:#f92672">%</span>
+<span style="color:#a6e22e">ineffassign</span> <span style="color:#ae81ff">100</span><span style="color:#f92672">%</span>
+<span style="color:#a6e22e">misspell</span> <span style="color:#ae81ff">100</span><span style="color:#f92672">%</span>
+</code></pre></div>
         
     </div>
 
