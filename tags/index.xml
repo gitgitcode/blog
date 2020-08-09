@@ -6,10 +6,28 @@
     <description>Recent content in Tags on xtangelo.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 14 Jun 2020 11:22:57 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 09 Aug 2020 14:12:58 +0800</lastBuildDate>
     
 	<atom:link href="https://xtangelo.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>page</title>
+      <link>https://xtangelo.com/tags/page/</link>
+      <pubDate>Sun, 09 Aug 2020 14:12:58 +0800</pubDate>
+      
+      <guid>https://xtangelo.com/tags/page/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SwiftLog</title>
+      <link>https://xtangelo.com/tags/swiftlog/</link>
+      <pubDate>Sun, 09 Aug 2020 14:12:58 +0800</pubDate>
+      
+      <guid>https://xtangelo.com/tags/swiftlog/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>github</title>
@@ -30,7 +48,7 @@
     </item>
     
     <item>
-      <title>linux</title>
+      <title>Linux</title>
       <link>https://xtangelo.com/tags/linux/</link>
       <pubDate>Sat, 13 Jun 2020 21:30:49 +0800</pubDate>
       
