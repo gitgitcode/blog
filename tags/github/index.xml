@@ -6,10 +6,19 @@
     <description>Recent content in github on xtangelo.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 14 Jun 2020 11:22:57 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 12 Aug 2020 12:21:44 +0800</lastBuildDate>
     
 	<atom:link href="https://xtangelo.com/tags/github/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>MakeGitHubSupportHttpsDomain</title>
+      <link>https://xtangelo.com/2020/makegithubsupporthttpsdomain/</link>
+      <pubDate>Wed, 12 Aug 2020 12:21:44 +0800</pubDate>
+      
+      <guid>https://xtangelo.com/2020/makegithubsupporthttpsdomain/</guid>
+      <description>配置域名支持https在之前几年还是比较麻烦的，免费证书也难弄。折腾了很久后放弃再重装，伴随着服务的被墙遗忘，删除再次重启，没有长久的驻扎营</description>
+    </item>
     
     <item>
       <title>MakeTestTagsBadgeForYourProjectOnGitHub github项目ReadMe增加测试覆盖率徽章</title>

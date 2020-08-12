@@ -4,7 +4,21 @@
     <url>
       <loc>https://xtangelo.com/categories/blog/</loc>
       
-      <lastmod>2020-08-09T14:12:58+08:00</lastmod>
+      <lastmod>2020-08-12T12:21:44+08:00</lastmod>
+      
+      
+      <changefreq>daily</changefreq>
+      
+      
+      <priority>0.8</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://xtangelo.com/tags/blog/</loc>
+      
+      <lastmod>2020-08-12T12:21:44+08:00</lastmod>
       
       
       <changefreq>daily</changefreq>
@@ -18,7 +32,35 @@
     <url>
       <loc>https://xtangelo.com/categories/</loc>
       
-      <lastmod>2020-08-09T14:12:58+08:00</lastmod>
+      <lastmod>2020-08-12T12:21:44+08:00</lastmod>
+      
+      
+      <changefreq>daily</changefreq>
+      
+      
+      <priority>0.8</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://xtangelo.com/tags/github/</loc>
+      
+      <lastmod>2020-08-12T12:21:44+08:00</lastmod>
+      
+      
+      <changefreq>daily</changefreq>
+      
+      
+      <priority>0.8</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://xtangelo.com/2020/makegithubsupporthttpsdomain/</loc>
+      
+      <lastmod>2020-08-12T12:21:44+08:00</lastmod>
       
       
       <changefreq>daily</changefreq>
@@ -32,7 +74,7 @@
     <url>
       <loc>https://xtangelo.com/tags/page/</loc>
       
-      <lastmod>2020-08-09T14:12:58+08:00</lastmod>
+      <lastmod>2020-08-12T12:21:44+08:00</lastmod>
       
       
       <changefreq>daily</changefreq>
@@ -46,7 +88,35 @@
     <url>
       <loc>https://xtangelo.com/posts/</loc>
       
-      <lastmod>2020-08-09T14:12:58+08:00</lastmod>
+      <lastmod>2020-08-12T12:21:44+08:00</lastmod>
+      
+      
+      <changefreq>daily</changefreq>
+      
+      
+      <priority>0.8</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://xtangelo.com/tags/</loc>
+      
+      <lastmod>2020-08-12T12:21:44+08:00</lastmod>
+      
+      
+      <changefreq>daily</changefreq>
+      
+      
+      <priority>0.8</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://xtangelo.com/</loc>
+      
+      <lastmod>2020-08-12T12:21:44+08:00</lastmod>
       
       
       <changefreq>daily</changefreq>
@@ -75,48 +145,6 @@
       <loc>https://xtangelo.com/2020/swiftui-cs103p-one/</loc>
       
       <lastmod>2020-08-09T14:12:58+08:00</lastmod>
-      
-      
-      <changefreq>daily</changefreq>
-      
-      
-      <priority>0.8</priority>
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://xtangelo.com/tags/</loc>
-      
-      <lastmod>2020-08-09T14:12:58+08:00</lastmod>
-      
-      
-      <changefreq>daily</changefreq>
-      
-      
-      <priority>0.8</priority>
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://xtangelo.com/</loc>
-      
-      <lastmod>2020-08-09T14:12:58+08:00</lastmod>
-      
-      
-      <changefreq>daily</changefreq>
-      
-      
-      <priority>0.8</priority>
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://xtangelo.com/tags/github/</loc>
-      
-      <lastmod>2020-06-14T11:22:57+08:00</lastmod>
       
       
       <changefreq>daily</changefreq>
@@ -212,7 +240,7 @@
     </url>
   
     <url>
-      <loc>https://xtangelo.com/categories/golang/</loc>
+      <loc>https://xtangelo.com/tags/golang/</loc>
       
       <lastmod>2020-06-09T06:19:56+08:00</lastmod>
       
@@ -226,7 +254,7 @@
     </url>
   
     <url>
-      <loc>https://xtangelo.com/tags/golang/</loc>
+      <loc>https://xtangelo.com/categories/golang/</loc>
       
       <lastmod>2020-06-09T06:19:56+08:00</lastmod>
       
@@ -327,20 +355,6 @@
       <loc>https://xtangelo.com/tags/%E5%AE%89%E5%85%A8/</loc>
       
       <lastmod>2020-06-03T11:47:07+08:00</lastmod>
-      
-      
-      <changefreq>daily</changefreq>
-      
-      
-      <priority>0.8</priority>
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://xtangelo.com/tags/blog/</loc>
-      
-      <lastmod>2020-06-01T15:43:52+08:00</lastmod>
       
       
       <changefreq>daily</changefreq>
