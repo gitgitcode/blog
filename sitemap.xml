@@ -2,9 +2,9 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     <url>
-      <loc>https://xtangelo.com/tags/blog/</loc>
+      <loc>https://xtangelo.com/categories/blog/</loc>
       
-      <lastmod>2020-08-12T12:21:44+08:00</lastmod>
+      <lastmod>2020-08-24T03:48:46+08:00</lastmod>
       
       
       <changefreq>daily</changefreq>
@@ -16,9 +16,9 @@
     </url>
   
     <url>
-      <loc>https://xtangelo.com/categories/blog/</loc>
+      <loc>https://xtangelo.com/2020/build-openresty-rtmp/</loc>
       
-      <lastmod>2020-08-12T12:21:44+08:00</lastmod>
+      <lastmod>2020-08-24T03:48:46+08:00</lastmod>
       
       
       <changefreq>daily</changefreq>
@@ -31,6 +31,104 @@
   
     <url>
       <loc>https://xtangelo.com/categories/</loc>
+      
+      <lastmod>2020-08-24T03:48:46+08:00</lastmod>
+      
+      
+      <changefreq>daily</changefreq>
+      
+      
+      <priority>0.8</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://xtangelo.com/tags/nginx/</loc>
+      
+      <lastmod>2020-08-24T03:48:46+08:00</lastmod>
+      
+      
+      <changefreq>daily</changefreq>
+      
+      
+      <priority>0.8</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://xtangelo.com/tags/openresty/</loc>
+      
+      <lastmod>2020-08-24T03:48:46+08:00</lastmod>
+      
+      
+      <changefreq>daily</changefreq>
+      
+      
+      <priority>0.8</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://xtangelo.com/tags/page/</loc>
+      
+      <lastmod>2020-08-24T03:48:46+08:00</lastmod>
+      
+      
+      <changefreq>daily</changefreq>
+      
+      
+      <priority>0.8</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://xtangelo.com/posts/</loc>
+      
+      <lastmod>2020-08-24T03:48:46+08:00</lastmod>
+      
+      
+      <changefreq>daily</changefreq>
+      
+      
+      <priority>0.8</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://xtangelo.com/tags/</loc>
+      
+      <lastmod>2020-08-24T03:48:46+08:00</lastmod>
+      
+      
+      <changefreq>daily</changefreq>
+      
+      
+      <priority>0.8</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://xtangelo.com/</loc>
+      
+      <lastmod>2020-08-24T03:48:46+08:00</lastmod>
+      
+      
+      <changefreq>daily</changefreq>
+      
+      
+      <priority>0.8</priority>
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://xtangelo.com/tags/blog/</loc>
       
       <lastmod>2020-08-12T12:21:44+08:00</lastmod>
       
@@ -59,62 +157,6 @@
   
     <url>
       <loc>https://xtangelo.com/2020/makegithubsupporthttpsdomain/</loc>
-      
-      <lastmod>2020-08-12T12:21:44+08:00</lastmod>
-      
-      
-      <changefreq>daily</changefreq>
-      
-      
-      <priority>0.8</priority>
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://xtangelo.com/tags/page/</loc>
-      
-      <lastmod>2020-08-12T12:21:44+08:00</lastmod>
-      
-      
-      <changefreq>daily</changefreq>
-      
-      
-      <priority>0.8</priority>
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://xtangelo.com/posts/</loc>
-      
-      <lastmod>2020-08-12T12:21:44+08:00</lastmod>
-      
-      
-      <changefreq>daily</changefreq>
-      
-      
-      <priority>0.8</priority>
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://xtangelo.com/tags/</loc>
-      
-      <lastmod>2020-08-12T12:21:44+08:00</lastmod>
-      
-      
-      <changefreq>daily</changefreq>
-      
-      
-      <priority>0.8</priority>
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://xtangelo.com/</loc>
       
       <lastmod>2020-08-12T12:21:44+08:00</lastmod>
       

@@ -6,10 +6,37 @@
     <description>Recent content in Tags on xtangelo.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 12 Aug 2020 12:21:44 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 24 Aug 2020 03:48:46 +0800</lastBuildDate>
     
 	<atom:link href="https://xtangelo.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>nginx</title>
+      <link>https://xtangelo.com/tags/nginx/</link>
+      <pubDate>Mon, 24 Aug 2020 03:48:46 +0800</pubDate>
+      
+      <guid>https://xtangelo.com/tags/nginx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>openresty</title>
+      <link>https://xtangelo.com/tags/openresty/</link>
+      <pubDate>Mon, 24 Aug 2020 03:48:46 +0800</pubDate>
+      
+      <guid>https://xtangelo.com/tags/openresty/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>page</title>
+      <link>https://xtangelo.com/tags/page/</link>
+      <pubDate>Mon, 24 Aug 2020 03:48:46 +0800</pubDate>
+      
+      <guid>https://xtangelo.com/tags/page/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>blog</title>
@@ -26,15 +53,6 @@
       <pubDate>Wed, 12 Aug 2020 12:21:44 +0800</pubDate>
       
       <guid>https://xtangelo.com/tags/github/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>page</title>
-      <link>https://xtangelo.com/tags/page/</link>
-      <pubDate>Wed, 12 Aug 2020 12:21:44 +0800</pubDate>
-      
-      <guid>https://xtangelo.com/tags/page/</guid>
       <description></description>
     </item>
     
@@ -57,7 +75,7 @@
     </item>
     
     <item>
-      <title>Linux</title>
+      <title>linux</title>
       <link>https://xtangelo.com/tags/linux/</link>
       <pubDate>Sat, 13 Jun 2020 21:30:49 +0800</pubDate>
       

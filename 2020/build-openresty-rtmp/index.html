@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noodp"/>
+    <meta name="author" content="cc">
+    <meta name="description" content="Build Openresty/nginx Rtmp/lua server with raspberry PI/ubuntu 树莓派编译安装rtmp服务 nginx openresty">
+    <meta name="keywords" content="xtangelo">
+    
+    <link rel="prev" href="https://xtangelo.com/2020/makegithubsupporthttpsdomain/" />
+    
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-17845502-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+    <meta content="x-tangelo橘柚一个小博客，描述被挤压的思索 - Build Openresty/nginx Rtmp/lua server with raspberry PI/ubuntu 树莓派编译安装rtmp服务 nginx openresty" property="og:description">
+    <meta content="Build Openresty Rtmp - xtangelo.com" property="og:title">
+    <meta content="xtangelo, 知识, 技巧, 怎么, 如何, 为什么, 的, Build Openresty Rtmp Webcam" name="keywords">
+    <meta content="Build Openresty Rtmp - xtangelo.com" property="og:title">
+    <link rel="canonical" href="https://xtangelo.com/2020/build-openresty-rtmp/" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>
+        
+        
+            Build Openresty Rtmp | xtangelo.com
+        
+    </title>
+    <meta name="title" content="Build Openresty Rtmp | xtangelo.com">
+    
+<link rel="stylesheet" href="/css/main.min.css">
+
+
+    
+    
+ 
+
+<script type="application/ld+json">
+{
+    "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/xtangelo.com\/"
+    },
+    "articleSection" : "posts",
+    "name" : "Build Openresty Rtmp",
+    "headline" : "Build Openresty Rtmp",
+    "description" : "Build Openresty\/nginx Rtmp\/lua server with raspberry PI\/ubuntu 树莓派编译安装rtmp服务 nginx openresty",
+    "inLanguage" : "zh-cn",
+    "author" : "cc",
+    "creator" : "cc",
+    "publisher": "cc",
+    "accountablePerson" : "cc",
+    "copyrightHolder" : "cc",
+    "copyrightYear" : "2020",
+    "datePublished": "2020-08-24 03:48:46 \x2b0800 CST",
+    "dateModified" : "2020-08-24 03:48:46 \x2b0800 CST",
+    "url" : "https:\/\/xtangelo.com\/2020\/build-openresty-rtmp\/",
+    "wordCount" : "653",
+    "keywords" : [ "page","nginx","openresty", "xtangelo.com"]
+}
+</script>
+
+  </head>
+    <body class="">
+        <div class="wrapper">
+            <nav class="navbar">
+    
+        <progress class="content_progress" max="0" value="0"></progress>
+    
+    <div class="container">
+        
+            <div class="navbar-header header-back2home-logo">
+                <span class="logo_mark" >>$</span>
+                <a href="https://xtangelo.com/">
+                    <span class="logo_text" >cd /home/</span>
+                    <span class="logo_cursor" ></span>
+                </a>
+            </div>
+        
+        <div class="navbar-right">
+                
+                <span class="menu">
+                
+                <a class="menu-item" href="/posts" title="">Posts</a>
+                
+                <a class="menu-item" href="/categories" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags" title="">Tags</a>
+                
+                <a class="menu-item" href="/about" title="">About</a>
+                
+                <span class="divide"></span>
+                <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dark-mode"></i></a>
+                </span>
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+    
+        <progress class="content_progress" max="0" value="0"></progress>
+    
+     <div class="container">
+        <div class="navbar">
+            <div class="navbar-header header-logo">
+                    <a href="https://xtangelo.com/">xtangelo.com</a>
+            </div>
+            <div class="navbar-right">
+                <div><a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-dark-mode"></i></a></div>
+                <div class="menu-toggle">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                <nav class="mb-md">
+                    
+                    
+                        <a class="menu-item" href="/posts" title="">
+                            <h3>Posts</h3>
+                            <div class="menu-active"></div>
+                        </a>
+                    
+                        <a class="menu-item" href="/categories" title="">
+                            <h3>Categories</h3>
+                            <div class="menu-active"></div>
+                        </a>
+                    
+                        <a class="menu-item" href="/tags" title="">
+                            <h3>Tags</h3>
+                            <div class="menu-active"></div>
+                        </a>
+                    
+                        <a class="menu-item" href="/about" title="">
+                            <h3>About</h3>
+                            <div class="menu-active"></div>
+                        </a>
+                    
+                </nav>
+        </div>
+    </div>
+</nav>
+            <main class="main">
+                <div class="container">
+                    
+<article class="post-warp" itemscope itemtype="http://schema.org/Article">
+    
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">Build Openresty Rtmp</h1>
+        <div class="post-meta">
+                Written by <a itemprop="name" href="https://xtangelo.com/" rel="author">cc</a> with ♥
+                <span class="post-time">
+                on <time datetime=2020-08-24 itemprop="datePublished">August 24, 2020</time>
+                </span>
+                in
+                
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        
+                        
+                        
+                          <a href="https://xtangelo.com/categories/blog/"> blog, </a>
+                        
+                        
+                </span>
+                <span class="post-word-count">653 words</span>
+        </div>
+    </header>
+ 
+    
+    
+    
+
+
+
+
+
+
+
+
+
+<div class="toc">
+
+    <div class="page-header"><strong> ✎ Catalog目录 </strong></div>
+
+    <div id="page-scrollspy" class="toc-nav">
+
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#%e7%8e%af%e5%a2%83%e5%87%86%e5%a4%87">
+                          <b>∴ 环境准备 </b>
+                            </a> ৲º
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#make--make-install">
+                          <b>∴ make &amp; make install </b>
+                            </a> ৲º
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+        
+            
+                
+                
+                    
+                    <ul class="nav">
+                    
+                    <ul class="nav">
+                    
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-left" href="#%e5%ae%89%e8%a3%85usb%e6%91%84%e5%83%8f%e5%a4%b4%e5%a4%b1%e8%b4%a5">
+                          <b>∴ 安装usb摄像头失败 </b>
+                            </a> ৲º
+                        </li>
+                    
+                    
+                    </ul>
+                    
+                    </ul>
+                    
+                
+            
+        
+
+    </div>
+
+</div>
+
+
+
+    
+    <div class="post-content">
+        
+
+        
+        
+
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+
+        <p>一个树莓派，闲着也是闲着搭建一个rtmp的服务当作直播使用。</p>
+<h2 id="环境准备">环境准备</h2>
+<p>环境
+<code>$ uname -a</code></p>
+<pre><code>Linux raspberrypi 5.4.51-v7+ #1333 SMP Mon Aug 10 16:45:19 BST 2020 armv7l GNU/Linux
+</code></pre>
+<p>安装包准备</p>
+<pre><code>arut-nginx-rtmp-module-791b613                   ngx_cache_purge-master
+arut-nginx-rtmp-module-v1.2.1-0-g791b613.tar.gz  ngx_cache_purge-master.zip
+openresty-1.17.8.2
+nginx_upstream_check_module-master               openresty-1.17.8.2.tar.gz
+nginx_upstream_check_module-master.zip
+</code></pre>
+<h2 id="make--make-install">make &amp; make install</h2>
+<p>一行命令，但是也有意外发生</p>
+<pre><code>cd /home/pi/Downloads/openresty-1.17.8.2/
+
+./configure --prefix=/opt/openresty  --with-luajit --without-http_redis2_module  --with-http_iconv_module  --with-http_postgres_module --with-http_realip_module  --with-http_xslt_module  --with-http_stub_status_module  --with-http_gzip_static_module --with-http_flv_module --with-http_perl_module --with-mail    --add-module=/home/pi/Downloads/ngx_cache_purge-master/ --add-module=/home/pi/Downloads/nginx_upstream_check_module-master/  --add-module=/home/pi/Downloads/arut-nginx-rtmp-module-791b613
+
+make
+make install
+
+</code></pre><p>虽然 ./configure 时会报错</p>
+<pre><code>d build
+cd LuaJIT-2.1-20190507
+cc: error: unrecognized command line option ‘-msse4.2’
+</code></pre><p>警告但是依旧可以通过 configure
+不要安装    &ndash;with-pcre 模块 不然configure就过不去了</p>
+<p>ls ~/Downloads/openresty-1.17.8.2/build
+文件生成</p>
+<pre><code>array-var-nginx-module-0.05          lua-resty-upload-0.10
+drizzle-nginx-module-0.1.11          lua-resty-upstream-healthcheck-0.06
+echo-nginx-module-0.62               lua-resty-websocket-0.07
+encrypted-session-nginx-module-0.08  lua-tablepool-0.01
+form-input-nginx-module-0.12         memc-nginx-module-0.19
+headers-more-nginx-module-0.33       nginx-1.17.8
+iconv-nginx-module-0.14              nginx-no_pool.patch
+install                              ngx_coolkit-0.2
+lua-cjson-2.1.0.8                    ngx_devel_kit-0.3.1
+LuaJIT-2.1-20200102                  ngx_lua-0.10.17
+luajit-root                          ngx_lua_upstream-0.07
+lua-rds-parser-0.06                  ngx_postgres-1.0
+lua-redis-parser-0.13                ngx_stream_lua-0.0.8
+lua-resty-core-0.1.19                opm-0.0.5
+lua-resty-dns-0.21                   pod
+lua-resty-limit-traffic-0.07         rds-csv-nginx-module-0.09
+lua-resty-lock-0.08                  rds-json-nginx-module-0.15
+lua-resty-lrucache-0.10              redis2-nginx-module-0.15
+lua-resty-memcached-0.15             redis-nginx-module-0.3.7
+lua-resty-mysql-0.21                 resty-cli-0.25
+lua-resty-redis-0.28                 resty.index
+lua-resty-shell-0.03                 set-misc-nginx-module-0.32
+lua-resty-signal-0.02                srcache-nginx-module-0.32
+lua-resty-string-0.12                xss-nginx-module-0.06
+
+</code></pre><p>Configuration 完成</p>
+<pre><code>Configuration summary
+  + using system PCRE library
+  + using system OpenSSL library
+  + using system zlib library
+
+  nginx path prefix: &quot;/opt/openresty/nginx&quot;
+  nginx binary file: &quot;/opt/openresty/nginx/sbin/nginx&quot;
+  nginx modules path: &quot;/opt/openresty/nginx/modules&quot;
+  nginx configuration prefix: &quot;/opt/openresty/nginx/conf&quot;
+  nginx configuration file: &quot;/opt/openresty/nginx/conf/nginx.conf&quot;
+  nginx pid file: &quot;/opt/openresty/nginx/logs/nginx.pid&quot;
+  nginx error log file: &quot;/opt/openresty/nginx/logs/error.log&quot;
+  nginx http access log file: &quot;/opt/openresty/nginx/logs/access.log&quot;
+  nginx http client request body temporary files: &quot;client_body_temp&quot;
+  nginx http proxy temporary files: &quot;proxy_temp&quot;
+  nginx http fastcgi temporary files: &quot;fastcgi_temp&quot;
+  nginx http uwsgi temporary files: &quot;uwsgi_temp&quot;
+  nginx http scgi temporary files: &quot;scgi_temp&quot;
+
+cd ../..
+Type the following commands to build and install:
+    make
+    make install
+</code></pre><ul>
+<li>make  报错缺啥补啥</li>
+</ul>
+<pre><code>usr bin ld cannot find lperl
+Cannot find -lperl doing a makefile on c++
+</code></pre><p>安装对应的lib</p>
+<pre><code>&gt;&gt; sudo apt-get install libperl-dev
+</code></pre>
+<p>然后 再次从新开始
+不知道为什么执行make clean 后configure 命令也不生效了只能删了从新来</p>
+<ul>
+<li>make</li>
+</ul>
+<pre><code>ed -e &quot;s|%%PREFIX%%|/opt/openresty/nginx|&quot; \
+ -e &quot;s|%%PID_PATH%%|/opt/openresty/nginx/logs/nginx.pid|&quot; \
+ -e &quot;s|%%CONF_PATH%%|/opt/openresty/nginx/conf/nginx.conf|&quot; \
+ -e &quot;s|%%ERROR_LOG_PATH%%|/opt/openresty/nginx/logs/error.log|&quot; \
+ &lt; docs/man/nginx.8 &gt; objs/nginx.8
+make[2]: Leaving directory '/home/pi/Downloads/openresty-1.17.8.2/build/nginx-1.17.8'
+make[1]: Leaving directory '/home/pi/Downloads/openresty-1.17.8.2/build/nginx-1.17.8'
+</code></pre><p>完成
+sudo make install
+pi@raspberrypi:/opt/openresty $ ls
+bin  COPYRIGHT  luajit  lualib  nginx  pod  resty.index  site
+pi@raspberrypi:/opt/openresty $ pwd
+/opt/openresty</p>
+<h2 id="安装usb摄像头失败">安装usb摄像头失败</h2>
+<p>ZC0301 Webcam 这个型号的usb摄像头没法用
+这个各种问题一堆 结果没法用 台湾的一个博客也说放弃了</p>
+<p>lsusb 可以查看到设备
+但是使用
+sudo apt-get install fswebcam</p>
+<p>fswebcam /dev/video0 ~/image.jpg
+照片是全黑的黑屏
+调整参数也没有用
+检查发现
+缺失 linux-headers-5.4.0-28_5.4.0-28.32_all.deb
+headers
+之后又是缺失 gspca
+sudo modprobe gspca
+或是下载编译
+下载安装后提示不能在当前内核中进行安装。
+这个旧版本的在新的环境里根本无法安装</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">NEWS</span> <span style="color:#a6e22e">support</span> <span style="color:#a6e22e">Vimicro</span> <span style="color:#a6e22e">vc0323</span>, <span style="color:#a6e22e">upto</span> <span style="color:#ae81ff">260</span> <span style="color:#a6e22e">webcams</span> ,<span style="color:#a6e22e">Happy</span> <span style="color:#a6e22e">Christmas</span> <span style="color:#f92672">:</span>).
+<span style="color:#a6e22e">until</span> <span style="color:#a6e22e">gspca</span> <span style="color:#a6e22e">v4l2</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">finished</span>, <span style="color:#a6e22e">used</span><span style="color:#f92672">:</span>
+<span style="color:#a6e22e">gspcav1</span> <span style="color:#e6db74">&#34;Generic Softwares Package for Camera Adapters&#34;</span> <span style="color:#a6e22e">version</span> <span style="color:#ae81ff">1.00</span><span style="color:#ae81ff">.20</span> <span style="color:#a6e22e">date</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">24</span><span style="color:#f92672">/</span><span style="color:#ae81ff">12</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2007</span>
+<span style="color:#66d9ef">for</span> <span style="color:#a6e22e">kernel</span> <span style="color:#a6e22e">up</span> <span style="color:#a6e22e">from</span> <span style="color:#ae81ff">2.6</span><span style="color:#ae81ff">.11</span> <span style="color:#f92672">:</span> <span style="color:#a6e22e">gspcav1</span><span style="color:#f92672">-</span><span style="color:#ae81ff">20071224.</span><span style="color:#a6e22e">tar</span>.<span style="color:#a6e22e">gz</span>
+<span style="color:#66d9ef">for</span> <span style="color:#a6e22e">kernel</span> <span style="color:#a6e22e">below</span> <span style="color:#ae81ff">2.6</span><span style="color:#ae81ff">.11</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">spca5xx</span> <span style="color:#a6e22e">version</span> <span style="color:#ae81ff">0.60</span><span style="color:#ae81ff">.00</span><span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">:</span>
+<span style="color:#a6e22e">spca5xx</span><span style="color:#f92672">-</span><span style="color:#a6e22e">v4l1goodbye</span>.<span style="color:#a6e22e">tar</span>.<span style="color:#a6e22e">gz</span>
+</code></pre></div><p>dpkg error with libc-bin
+sudo apt-get &ndash;reinstall install libc-bin</p>
+<p>sudo dpkg &ndash;configure -a
+这个命令很管用</p>
+
+        
+    </div>
+
+    <div class="post-copyright">
+        
+            
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>cc </span>
+                </p>
+            
+
+            
+            <p class="copyright-item">
+                    <span>Link:</span>
+                    <a href=https://xtangelo.com/2020/build-openresty-rtmp/>https://xtangelo.com/2020/build-openresty-rtmp/</span>
+            </p>
+            
+            
+            <p class="copyright-item lincese">
+                本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可
+            </p>
+            
+    </div>
+
+
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s):
+            
+            <span class="tag"><a href="https://xtangelo.com/tags/page/">
+                    #page</a></span>
+            
+            <span class="tag"><a href="https://xtangelo.com/tags/nginx/">
+                    #nginx</a></span>
+            
+            <span class="tag"><a href="https://xtangelo.com/tags/openresty/">
+                    #openresty</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">back</a></span> ·
+                <span><a href="https://xtangelo.com/">home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="https://xtangelo.com/2020/makegithubsupporthttpsdomain/" class="prev" rel="prev" title="MakeGitHubSupportHttpsDomain"><i class="iconfont icon-left"></i>&nbsp;MakeGitHubSupportHttpsDomain</a>
+        
+        
+    </div>
+
+    <div class="post-comment">
+        
+            
+                
+<div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script>
+  const gitalk = new Gitalk({
+    clientID: 'b2ab3288358995dc37d5',
+    clientSecret: '43d3958d660e947cb7ae26afb8fbed0b73f3b6c4',
+    repo: 'https:\/\/gitgitcode.github.io',
+    owner: 'gitgitcode',
+    admin: ['gitgitcode'],
+    id: location.pathname, 
+    distractionFreeMode: false 
+  });
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('gitalk-container').innerHTML = 'Gitalk comments not available by default when the website is previewed locally.';
+      return;
+    }
+    gitalk.render('gitalk-container');
+  })();
+</script>
+
+
+
+            
+        
+    </div>
+</article>
+                </div>
+            </main>
+            <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2018 - 2020</span>
+        
+        <span class="with-love">
+    	 <i class="iconfont icon-love"></i>
+         </span>
+         
+            <span class="author" itemprop="copyrightHolder"><a href="https://xtangelo.com/">cc</a> | </span>
+         
+
+         
+		  <span>Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow">Hugo</a> & <a href="https://github.com/Mogeko/Mogege" target="_blank" rel="external nofollow">Mogege</a></span>
+    </div>
+</footer>
+
+
+
+
+
+>
+<script defer src="/js/vendor_main.min.js"></script>
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
+<script> pangu.spacingPage();</script>
+
+
+
+
+
+        </div>
+    </body>
+</html>

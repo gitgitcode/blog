@@ -5,13 +5,13 @@
     <description>Recent content in xtangelo.com on xtangelo.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 12 Aug 2020 12:21:44 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 24 Aug 2020 03:48:46 +0800</lastBuildDate>
     <atom:link href="https://xtangelo.com/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Posts</title>
       <link>https://xtangelo.com/posts/</link>
-      <pubDate>Wed, 12 Aug 2020 12:21:44 +0800</pubDate>
+      <pubDate>Mon, 24 Aug 2020 03:48:46 +0800</pubDate>
       
       <guid>https://xtangelo.com/posts/</guid>
       <description></description>
@@ -23,8 +23,15 @@
       <pubDate>Mon, 01 Jun 2020 14:06:41 +0800</pubDate>
       
       <guid>https://xtangelo.com/about/</guid>
-      <description>&lt;h2 id=&#34;not-test&#34;&gt;not test&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;健忘&#34;&gt;健忘&lt;/h2&gt;
 &lt;p&gt;一个新的博客&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;配置在 Documents/gitgitcodeBlog下&lt;/li&gt;
+&lt;li&gt;使用hugo进行创建&lt;/li&gt;
+&lt;li&gt;常用命令 hugo&lt;/li&gt;
+&lt;li&gt;public 目录是发布目录&lt;/li&gt;
+&lt;li&gt;public 上层 hugo new posts/newpost.md新建文章&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
