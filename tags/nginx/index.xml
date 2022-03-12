@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>nginx on xtangelo.com</title>
-    <link>https://xtangelo.com/tags/nginx/</link>
-    <description>Recent content in nginx on xtangelo.com</description>
+    <title>nginx on gitgitcode.github.io</title>
+    <link>https://gitgitcode.github.io/tags/nginx/</link>
+    <description>Recent content in nginx on gitgitcode.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 24 Aug 2020 03:48:46 +0800</lastBuildDate>
     
-	<atom:link href="https://xtangelo.com/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://gitgitcode.github.io/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Build Openresty Rtmp</title>
-      <link>https://xtangelo.com/2020/build-openresty-rtmp/</link>
+      <link>https://gitgitcode.github.io/2020/build-openresty-rtmp/</link>
       <pubDate>Mon, 24 Aug 2020 03:48:46 +0800</pubDate>
       
-      <guid>https://xtangelo.com/2020/build-openresty-rtmp/</guid>
+      <guid>https://gitgitcode.github.io/2020/build-openresty-rtmp/</guid>
       <description>一个树莓派，闲着也是闲着搭建一个rtmp的服务当作直播使用。 环境准备 环境 $ uname -a Linux raspberrypi 5.4.51-v7+ #1333 SMP Mon Aug 10 16:45:19 BST 2020 armv7l GNU/Linux 安装包准备 arut-nginx-rtmp-module-791b613 ngx_cache_purge-master arut-nginx-rtmp-module-v1.2.1-0-g791b613.tar.gz ngx_cache_purge-master.zip openresty-1.17.8.2 nginx_upstream_check_module-master openresty-1.17.8.2.tar.gz nginx_upstream_check_module-master.zip make &amp;amp; make install 一</description>
     </item>
     

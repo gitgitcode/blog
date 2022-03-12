@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>golang on xtangelo.com</title>
-    <link>https://xtangelo.com/tags/golang/</link>
-    <description>Recent content in golang on xtangelo.com</description>
+    <title>golang on gitgitcode.github.io</title>
+    <link>https://gitgitcode.github.io/tags/golang/</link>
+    <description>Recent content in golang on gitgitcode.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 09 Jun 2020 06:19:56 +0800</lastBuildDate>
     
-	<atom:link href="https://xtangelo.com/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://gitgitcode.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How to Read Twice From the Same io.Reader</title>
-      <link>https://xtangelo.com/2020/readtwicefromthesameio-reader/</link>
+      <link>https://gitgitcode.github.io/2020/readtwicefromthesameio-reader/</link>
       <pubDate>Tue, 09 Jun 2020 06:19:56 +0800</pubDate>
       
-      <guid>https://xtangelo.com/2020/readtwicefromthesameio-reader/</guid>
+      <guid>https://gitgitcode.github.io/2020/readtwicefromthesameio-reader/</guid>
       <description>问题场景 准备在读取一个网络地址，获取页面的html标签结构和内容。找到一些方法，是通过读取 http.Get(testUrl)返回的HTTP response</description>
     </item>
     

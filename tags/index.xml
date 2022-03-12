@@ -1,139 +1,139 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on xtangelo.com</title>
-    <link>https://xtangelo.com/tags/</link>
-    <description>Recent content in Tags on xtangelo.com</description>
+    <title>Tags on gitgitcode.github.io</title>
+    <link>https://gitgitcode.github.io/tags/</link>
+    <description>Recent content in Tags on gitgitcode.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 24 Aug 2020 03:48:46 +0800</lastBuildDate>
     
-	<atom:link href="https://xtangelo.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://gitgitcode.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>nginx</title>
-      <link>https://xtangelo.com/tags/nginx/</link>
+      <link>https://gitgitcode.github.io/tags/nginx/</link>
       <pubDate>Mon, 24 Aug 2020 03:48:46 +0800</pubDate>
       
-      <guid>https://xtangelo.com/tags/nginx/</guid>
+      <guid>https://gitgitcode.github.io/tags/nginx/</guid>
       <description></description>
     </item>
     
     <item>
       <title>openresty</title>
-      <link>https://xtangelo.com/tags/openresty/</link>
+      <link>https://gitgitcode.github.io/tags/openresty/</link>
       <pubDate>Mon, 24 Aug 2020 03:48:46 +0800</pubDate>
       
-      <guid>https://xtangelo.com/tags/openresty/</guid>
+      <guid>https://gitgitcode.github.io/tags/openresty/</guid>
       <description></description>
     </item>
     
     <item>
       <title>page</title>
-      <link>https://xtangelo.com/tags/page/</link>
+      <link>https://gitgitcode.github.io/tags/page/</link>
       <pubDate>Mon, 24 Aug 2020 03:48:46 +0800</pubDate>
       
-      <guid>https://xtangelo.com/tags/page/</guid>
+      <guid>https://gitgitcode.github.io/tags/page/</guid>
       <description></description>
     </item>
     
     <item>
       <title>blog</title>
-      <link>https://xtangelo.com/tags/blog/</link>
+      <link>https://gitgitcode.github.io/tags/blog/</link>
       <pubDate>Wed, 12 Aug 2020 12:21:44 +0800</pubDate>
       
-      <guid>https://xtangelo.com/tags/blog/</guid>
+      <guid>https://gitgitcode.github.io/tags/blog/</guid>
       <description></description>
     </item>
     
     <item>
       <title>github</title>
-      <link>https://xtangelo.com/tags/github/</link>
+      <link>https://gitgitcode.github.io/tags/github/</link>
       <pubDate>Wed, 12 Aug 2020 12:21:44 +0800</pubDate>
       
-      <guid>https://xtangelo.com/tags/github/</guid>
+      <guid>https://gitgitcode.github.io/tags/github/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SwiftLog</title>
-      <link>https://xtangelo.com/tags/swiftlog/</link>
+      <link>https://gitgitcode.github.io/tags/swiftlog/</link>
       <pubDate>Sun, 09 Aug 2020 14:12:58 +0800</pubDate>
       
-      <guid>https://xtangelo.com/tags/swiftlog/</guid>
+      <guid>https://gitgitcode.github.io/tags/swiftlog/</guid>
       <description></description>
     </item>
     
     <item>
       <title>testing</title>
-      <link>https://xtangelo.com/tags/testing/</link>
+      <link>https://gitgitcode.github.io/tags/testing/</link>
       <pubDate>Sun, 14 Jun 2020 11:22:57 +0800</pubDate>
       
-      <guid>https://xtangelo.com/tags/testing/</guid>
+      <guid>https://gitgitcode.github.io/tags/testing/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>linux</title>
-      <link>https://xtangelo.com/tags/linux/</link>
+      <title>Linux</title>
+      <link>https://gitgitcode.github.io/tags/linux/</link>
       <pubDate>Sat, 13 Jun 2020 21:30:49 +0800</pubDate>
       
-      <guid>https://xtangelo.com/tags/linux/</guid>
+      <guid>https://gitgitcode.github.io/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>pi</title>
-      <link>https://xtangelo.com/tags/pi/</link>
+      <link>https://gitgitcode.github.io/tags/pi/</link>
       <pubDate>Sat, 13 Jun 2020 21:30:49 +0800</pubDate>
       
-      <guid>https://xtangelo.com/tags/pi/</guid>
+      <guid>https://gitgitcode.github.io/tags/pi/</guid>
       <description></description>
     </item>
     
     <item>
       <title>golang</title>
-      <link>https://xtangelo.com/tags/golang/</link>
+      <link>https://gitgitcode.github.io/tags/golang/</link>
       <pubDate>Tue, 09 Jun 2020 06:19:56 +0800</pubDate>
       
-      <guid>https://xtangelo.com/tags/golang/</guid>
+      <guid>https://gitgitcode.github.io/tags/golang/</guid>
       <description></description>
     </item>
     
     <item>
       <title>http</title>
-      <link>https://xtangelo.com/tags/http/</link>
+      <link>https://gitgitcode.github.io/tags/http/</link>
       <pubDate>Tue, 09 Jun 2020 06:19:56 +0800</pubDate>
       
-      <guid>https://xtangelo.com/tags/http/</guid>
+      <guid>https://gitgitcode.github.io/tags/http/</guid>
       <description></description>
     </item>
     
     <item>
       <title>io.Reader</title>
-      <link>https://xtangelo.com/tags/io.reader/</link>
+      <link>https://gitgitcode.github.io/tags/io.reader/</link>
       <pubDate>Tue, 09 Jun 2020 06:19:56 +0800</pubDate>
       
-      <guid>https://xtangelo.com/tags/io.reader/</guid>
+      <guid>https://gitgitcode.github.io/tags/io.reader/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ssh</title>
-      <link>https://xtangelo.com/tags/ssh/</link>
+      <link>https://gitgitcode.github.io/tags/ssh/</link>
       <pubDate>Wed, 03 Jun 2020 11:47:07 +0800</pubDate>
       
-      <guid>https://xtangelo.com/tags/ssh/</guid>
+      <guid>https://gitgitcode.github.io/tags/ssh/</guid>
       <description></description>
     </item>
     
     <item>
       <title>安全</title>
-      <link>https://xtangelo.com/tags/%E5%AE%89%E5%85%A8/</link>
+      <link>https://gitgitcode.github.io/tags/%E5%AE%89%E5%85%A8/</link>
       <pubDate>Wed, 03 Jun 2020 11:47:07 +0800</pubDate>
       
-      <guid>https://xtangelo.com/tags/%E5%AE%89%E5%85%A8/</guid>
+      <guid>https://gitgitcode.github.io/tags/%E5%AE%89%E5%85%A8/</guid>
       <description></description>
     </item>
     

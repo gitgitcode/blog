@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>page on xtangelo.com</title>
-    <link>https://xtangelo.com/tags/page/</link>
-    <description>Recent content in page on xtangelo.com</description>
+    <title>page on gitgitcode.github.io</title>
+    <link>https://gitgitcode.github.io/tags/page/</link>
+    <description>Recent content in page on gitgitcode.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 24 Aug 2020 03:48:46 +0800</lastBuildDate>
     
-	<atom:link href="https://xtangelo.com/tags/page/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://gitgitcode.github.io/tags/page/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Build Openresty Rtmp</title>
-      <link>https://xtangelo.com/2020/build-openresty-rtmp/</link>
+      <link>https://gitgitcode.github.io/2020/build-openresty-rtmp/</link>
       <pubDate>Mon, 24 Aug 2020 03:48:46 +0800</pubDate>
       
-      <guid>https://xtangelo.com/2020/build-openresty-rtmp/</guid>
+      <guid>https://gitgitcode.github.io/2020/build-openresty-rtmp/</guid>
       <description>一个树莓派，闲着也是闲着搭建一个rtmp的服务当作直播使用。 环境准备 环境 $ uname -a Linux raspberrypi 5.4.51-v7+ #1333 SMP Mon Aug 10 16:45:19 BST 2020 armv7l GNU/Linux 安装包准备 arut-nginx-rtmp-module-791b613 ngx_cache_purge-master arut-nginx-rtmp-module-v1.2.1-0-g791b613.tar.gz ngx_cache_purge-master.zip openresty-1.17.8.2 nginx_upstream_check_module-master openresty-1.17.8.2.tar.gz nginx_upstream_check_module-master.zip make &amp;amp; make install 一</description>
     </item>
     
     <item>
       <title>MakeGitHubSupportHttpsDomain</title>
-      <link>https://xtangelo.com/2020/makegithubsupporthttpsdomain/</link>
+      <link>https://gitgitcode.github.io/2020/makegithubsupporthttpsdomain/</link>
       <pubDate>Wed, 12 Aug 2020 12:21:44 +0800</pubDate>
       
-      <guid>https://xtangelo.com/2020/makegithubsupporthttpsdomain/</guid>
+      <guid>https://gitgitcode.github.io/2020/makegithubsupporthttpsdomain/</guid>
       <description>配置域名支持https在之前几年还是比较麻烦的，免费证书也难弄。折腾了很久后放弃再重装，伴随着服务的被墙遗忘，删除再次重启，没有长久的驻扎营</description>
     </item>
     
     <item>
       <title>SwiftUI Cs103p One</title>
-      <link>https://xtangelo.com/2020/swiftui-cs103p-one/</link>
+      <link>https://gitgitcode.github.io/2020/swiftui-cs103p-one/</link>
       <pubDate>Sun, 09 Aug 2020 14:12:58 +0800</pubDate>
       
-      <guid>https://xtangelo.com/2020/swiftui-cs103p-one/</guid>
+      <guid>https://gitgitcode.github.io/2020/swiftui-cs103p-one/</guid>
       <description>swift 流水帐 Review 第一课内容涉及 Xcode 的介绍，各个常用的功能区域，模拟器以及canvas的实时预览功能，这样机器消耗似乎比较小。 简单的创建页面和新的文件</description>
     </item>
     

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ssh on xtangelo.com</title>
-    <link>https://xtangelo.com/tags/ssh/</link>
-    <description>Recent content in ssh on xtangelo.com</description>
+    <title>ssh on gitgitcode.github.io</title>
+    <link>https://gitgitcode.github.io/tags/ssh/</link>
+    <description>Recent content in ssh on gitgitcode.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 03 Jun 2020 11:47:07 +0800</lastBuildDate>
     
-	<atom:link href="https://xtangelo.com/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://gitgitcode.github.io/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ssh 配置免密登录</title>
-      <link>https://xtangelo.com/2020/ssh%E7%99%BB%E5%BD%95%E9%85%8D%E7%BD%AE/</link>
+      <link>https://gitgitcode.github.io/2020/ssh%E7%99%BB%E5%BD%95%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Wed, 03 Jun 2020 11:47:07 +0800</pubDate>
       
-      <guid>https://xtangelo.com/2020/ssh%E7%99%BB%E5%BD%95%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://gitgitcode.github.io/2020/ssh%E7%99%BB%E5%BD%95%E9%85%8D%E7%BD%AE/</guid>
       <description>原理 通过本地公钥放到远程主机上，这样登录时只需要校验当前机器的公钥就不用密码了。 创建你本地公钥 远程主机添加你的公钥 修改远程主机的sshd 配置</description>
     </item>
     
